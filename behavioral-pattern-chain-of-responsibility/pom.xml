@@ -10,7 +10,6 @@
         <version>21-RELEASE</version>
     </parent>
 
-    <groupId>com.luruoyang</groupId>
     <artifactId>behavioral-pattern-chain-of-responsibility</artifactId>
     <version>21-RELEASE</version>
 
