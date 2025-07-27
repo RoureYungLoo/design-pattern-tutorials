@@ -1,2 +1,4 @@
-package com.luruoyang.test2;public class Client {
+package com.luruoyang.test2;
+
+public class Client {
 }

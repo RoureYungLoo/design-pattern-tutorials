@@ -1,4 +1,4 @@
-package com.design_pattern.creational.factory_method_pattern;
+package com.luruoyang;
 
 /* 抽象产品 */
 public abstract class Product {

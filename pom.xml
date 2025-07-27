@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.luruoyang</groupId>
+    <artifactId>design-pattern-tutorials</artifactId>
+    <version>21-RELEASE</version>
+
+    <packaging>pom</packaging>
+
+    <properties>
+        <java.version>21</java.version>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <modules>
+        <module>design-principle-SRP</module>
+        <module>design-principle-OCP</module>
+        <module>design-principle-LSP</module>
+        <module>design-principle-DIP</module>
+        <module>design-principle-ISP</module>
+        <module>design-principle-CRP</module>
+        <module>design-principle-LoD</module>
+
+        <module>creational-pattern-simple-factory</module>
+        <module>creational-pattern-factory-method</module>
+        <module>creational-pattern-abstract-method</module>
+        <module>creational-pattern-singleton</module>
+        <module>creational-pattern-prototype</module>
+        <module>creational-pattern-builder</module>
+
+        <module>structural-pattern-adapter</module>
+        <module>structural-pattern-bridge</module>
+        <module>structural-pattern-composite</module>
+        <module>structural-pattern-decorator</module>
+        <module>structural-pattern-facade</module>
+        <module>structural-pattern-flyweight</module>
+        <module>structural-pattern-proxy</module>
+
+        <module>behavioral-pattern-chain-of-responsibility</module>
+        <module>behavioral-pattern-command</module>
+        <module>behavioral-pattern-interpreter</module>
+        <module>behavioral-pattern-iterator</module>
+        <module>behavioral-pattern-mediator</module>
+        <module>behavioral-pattern-memento</module>
+        <module>behavioral-pattern-observer</module>
+        <module>behavioral-pattern-state</module>
+        <module>behavioral-pattern-strategy</module>
+        <module>behavioral-pattern-template-method</module>
+        <module>behavioral-pattern-visitor</module>
+    </modules>
+    <dependencyManagement>
+        <dependencies>
+            <!-- https://mvnrepository.com/artifact/cglib/cglib -->
+            <dependency>
+                <groupId>cglib</groupId>
+                <artifactId>cglib</artifactId>
+                <version>3.3.0</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>
