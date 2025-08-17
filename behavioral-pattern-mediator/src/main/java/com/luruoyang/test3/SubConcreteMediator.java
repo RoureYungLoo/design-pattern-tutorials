@@ -1,22 +1,15 @@
-package com.luruoyang.test2;
+package com.luruoyang.test3;
 
-import lombok.*;
+import com.luruoyang.test2.Component;
+import com.luruoyang.test2.ConcreteMediator;
+import lombok.Data;
 
-/* 具体中介者 */
-@EqualsAndHashCode(callSuper = true)
+/* 新增具体中介者类 */
 @Data
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
-public class ConcreteMediator extends Mediator {
+public class SubConcreteMediator extends ConcreteMediator {
+  /* 持有新增的标签类的引用 */
+  public Label label;
 
-  /* 持有同事对象(即Component的子类对象)的引用 */
-  protected Button addButton;
-  protected List list;
-  protected TextBox userNameTextBox;
-  protected ComboBox comboBox;
-
-  /* 封装对象交互 */
   @Override
   public void componentChanged(Component component) {
     if (component == addButton) {
@@ -24,6 +17,7 @@ public class ConcreteMediator extends Mediator {
       list.update();
       comboBox.update();
       userNameTextBox.update();
+      label.update();
     } else if (component == list) {
       System.out.println("从列表框选择客户");
       comboBox.select();
@@ -33,5 +27,6 @@ public class ConcreteMediator extends Mediator {
       comboBox.select();
       userNameTextBox.setText();
     }
+
   }
 }

@@ -1,0 +1,2 @@
+myKitty:
+  provider: com.luruoyang.test1.ConcreteServiceProviderB

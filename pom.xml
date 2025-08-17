@@ -17,6 +17,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <lombok.version>1.18.38</lombok.version>
         <cglib.version>3.3.0</cglib.version>
+        <snakeyaml.version>1.33</snakeyaml.version>
     </properties>
 
     <modules>
@@ -34,6 +35,7 @@
         <module>creational-pattern-singleton</module>
         <module>creational-pattern-prototype</module>
         <module>creational-pattern-builder</module>
+        <module>pattern-creational-provider</module>
 
         <module>structural-pattern-adapter</module>
         <module>structural-pattern-bridge</module>
@@ -68,6 +70,12 @@
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.yaml</groupId>
+                <artifactId>snakeyaml</artifactId>
+                <version>${snakeyaml.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
